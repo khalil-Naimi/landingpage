@@ -1,6 +1,7 @@
 # Lilo Digital
 
- -description:il š'agit d'un site web qui rend des services de développement comme: cree un site web,cree des application bureau,hébergement des site...
+ -description:
+     il š'agit d'un site web qui rend des services de développement comme: cree un site web,cree des application bureau,hébergement des site...
 
  -Technologie de projet ( langage(html,css,javascript) , editeur(vscode) , framework ( saas ,googlefont,font awesome) )
  
