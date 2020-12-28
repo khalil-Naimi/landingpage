@@ -14,4 +14,5 @@
   -Sass => style de la page ecrit en Scss.
   -script => java script code .
   -Style => css du page genere
- 
+ capture d'écran:
+![Uploading screencapture-file-C-Sass-Product-Project-HTML-HomePage-html-2020-12-28-22_12_05.png…]()
