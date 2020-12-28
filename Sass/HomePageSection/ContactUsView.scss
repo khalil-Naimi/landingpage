@@ -1,0 +1,17 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "../Varibales/ContactUsViewElement.scss";
+@import "../Varibales/Element.scss";
+
+@mixin ContactUsView {
+    .ContactUsView
+    {
+        position: relative;
+        min-height: 100%;
+        width: 100%;
+        @include wave;
+        @include ViewHeader; 
+        @include Personal-Info;   
+    }
+    
+}

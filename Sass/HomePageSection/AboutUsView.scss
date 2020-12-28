@@ -1,0 +1,18 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "../Varibales/AboutViewElement.scss";
+@import "../Varibales/Element.scss";
+
+@mixin AboutUsView {
+  .AboutUsView {
+    position: relative;
+    min-height: 1000px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    @include Animation;
+    @include wave;
+    @include ViewHeader;
+    @include About-text;
+  }
+}

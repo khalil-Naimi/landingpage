@@ -1,0 +1,98 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "Element.scss";
+
+// About View Element -----------------------------------------------------
+@mixin About-text {
+  .About-text {
+    position: relative;
+    width: 700px;
+    height: 750px;
+    display: inline-block;
+    p {
+      margin-top: 25px;
+      text-align: left;
+      font-weight: bold;
+    }
+    div {
+      svg {
+        margin-top: 25px;
+        width: 500px;
+        height: 400px;
+      }
+    }
+  }
+}
+//Animation----------------------------------------------------------------------------------------
+@mixin Animation {
+  #DogHead {
+    animation: Rotation 2s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-20deg);
+    }
+  }
+  #FisrtManBody {
+    animation: Breathing 2s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Breathing {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  #SecondManBody {
+    animation: Breathing1 2s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Breathing1 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.02);
+    }
+  }
+  #FirstWomanBody {
+    animation: Breathing2 2s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Breathing2 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.04);
+    }
+  }
+  #SecondWomanBody {
+    animation: Breathing3 2s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Breathing3 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+}

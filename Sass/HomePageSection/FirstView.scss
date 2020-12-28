@@ -1,0 +1,90 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "../Varibales/FirstViewElement.scss";
+
+@mixin FirstView {
+  .FirstView {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background-color: $MainBGColor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:350px; 
+    @include Bgsvg;
+    @include Caption;
+    @include box;
+  }
+  //Animation--------------------------------------------------------------------------------------
+  #group1 {
+    animation: BGAnimationG1 10s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes BGAnimationG1 {
+    from {
+      transform: rotate(15deg);
+    }
+    to {
+      transform: rotate(-5deg);
+    }
+  }
+  #group2 {
+    animation: BGAnimationG2 10s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes BGAnimationG2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+  }
+  #group3 {
+    animation: BGAnimationG3 10s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes BGAnimationG3 {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(10%);
+    }
+  }
+  #group4 {
+    animation: BGAnimationG4 10s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes BGAnimationG4 {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10%);
+    }
+  }
+  #group5 {
+    animation: BGAnimationG5 10s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes BGAnimationG5 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(10%);
+    }
+  }
+}

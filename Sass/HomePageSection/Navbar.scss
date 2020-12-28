@@ -1,0 +1,25 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "../Varibales/NavigationBarElement.scss";
+
+@mixin Navbar {
+  .Navbar {
+    z-index: 500;
+    position: absolute;
+    display: inline-flex;
+    height: 70px;
+    width: 100%;
+    background-color: $NavbarBGColor;
+    font-family: $PageFont;
+    justify-content: center;
+    align-items: center;
+
+    @include Navbar-brand;
+
+    .navbar-collapse { 
+      display: inline-flex;
+      @include navbar-item;
+      @include btn-nav;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "Element.scss";
+
+// First View Element ---------------------------------------------------------
+@mixin Caption {
+  .Caption {
+    position: relative;
+    top: 24%;
+    left: 25%;
+    width: 860px;
+    //border: 3px solid $ColorBass1;
+    background-color: $MainBGColor;
+    align-items: center;
+    border-radius: 10px;
+    animation-name: Leftslide;
+    text-align: center;
+    animation-duration: 3s;
+    h1 {
+      display: inline;
+      color: $MainViewCaptionColor;
+      font-family: $BrandFont; 
+      font-size: 50px;
+    }
+  }
+}
+@mixin Bgsvg {
+  .Bgsvg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    svg {
+      position: absolute;
+      overflow: hidden;
+      top: -10%;
+      width: 100%;
+      height: 110%;
+    }
+  }
+}
+
+@mixin box {
+  .box {
+    position: absolute;
+    left: 49%;
+    transform: translateX(-18%);
+    z-index: 22;
+    bottom: 12%;
+  }
+  .box span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid $BoxColor;
+    border-right: 4px solid $BoxColor;
+    transform: rotate(45deg);
+    animation: anime 3s infinite;
+    cursor: pointer;
+    margin: -7px;
+  }
+
+  .box span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+
+  .box span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+
+  @keyframes anime {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-14px, -14px);
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(14px, 14px);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "../Varibales/ServicesViewElement.scss";
+@import "../Varibales/Element.scss";
+
+@mixin ServicesView {
+  .ServicesView {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    background-color: $MainBGColor;
+    padding-bottom: 350px; 
+    @include DesktopApplicationAnimation;
+    @include WebsiteAnimation;
+    @include MobileAnimation;
+    @include HostingServerAnimation;
+    @include MaintenanceAnimation;
+    @include wave2;
+    @include ViewHeader;
+    h1 {
+      color: $ColorBass2;
+    }
+    @include Card;
+  }
+}

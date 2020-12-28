@@ -1,0 +1,89 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "Element.scss";
+
+// Navigation Element ---------------------------------------------------------
+@mixin btn-nav {
+  input {
+    position: absolute;
+    right: 50px;
+    padding: 10px;
+    border: 2px solid $NavbuttonBorder;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: $NavbuttonBG;
+    color: $NavbuttonColor;
+    outline: none;
+    transition: all linear 300ms;
+    animation-name: Leftslide;
+    animation-duration: 3s;
+    font-size: medium;
+    &:hover {
+      color: $NavbuttonBorderHover;
+      border-color: #ffffff;
+    }
+  }
+}
+
+@mixin Navbar-brand {
+  .Navbar-brand {
+    position: absolute;
+    font-family: $BrandFont;
+    margin: 20px 60px;
+    font-size: 25px;
+    color: $BrandColor1;
+    padding: 2px 20px;
+    @include ATag;
+    left: 10px;
+    transition: all linear 300ms;
+    animation-name: Leftslide;
+    animation-duration: 3s;
+    .LogoDesgin {
+      color: $BrandColor2;
+      font-family: $BrandFont;
+    }
+    border: 2px solid $NavbarbrandBorderColor;
+    border-radius: 5px;
+    &:hover {
+      color: $BrandColor2;
+      border-color: $BrandColor1;
+    }
+  }
+}
+
+@mixin navbar-item {
+  .navbar-item {
+    position: relative;
+    list-style: none;
+    display: inline-flex;
+    left: 2px;
+    animation-name: Leftslide;
+    animation-duration: 3s;
+
+    .navbar-links {
+      margin: 10px 30px;
+      transition: all linear 400ms;
+      a {
+        @include ATag;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &::after {
+        margin-top: 5px;
+        content: " ";
+        display: block;
+        height: 3px;
+        width: 0%;
+        transition: all linear 400ms;
+        background-color: $navbarLinksAfterColor;
+        bottom: 0%;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

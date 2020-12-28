@@ -1,0 +1,36 @@
+@import '../Varibales/Varibales';
+@import '../HomePageSection/ScrollBar.scss';
+@import '../HomePageSection/Navbar.scss';
+@import '../HomePageSection/FirstView.scss';
+@import '../HomePageSection/AboutUsView.scss';
+@import '../HomePageSection/ServicesView.scss';
+@import '../HomePageSection/ContactUsView.scss';
+@import '../HomePageSection/FotterView.scss';
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: $PageFont;
+
+}
+@include LeftSlide;
+// Scroll Bar Custom css ------------------------------------------------------
+@include ScrollBar;
+
+// Navigation bar css ---------------------------------------------------------
+@include Navbar;
+
+//Fisrt View css --------------------------------------------------------------
+@include FirstView;
+ 
+//About us View css -----------------------------------------------------------
+@include AboutUsView;
+
+// Services View --------------------------------------------------------------
+@include ServicesView;
+
+// Contact Us View ------------------------------------------------------------
+@include ContactUsView;
+
+// Fotter View-----------------------------------------------------------------
+@include FotterView;

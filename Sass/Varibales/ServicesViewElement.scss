@@ -1,0 +1,512 @@
+@import "../Varibales/Color";
+@import "../Varibales/Varibales";
+@import "Element.scss";
+//Animation----------------------------------------------------------------------------------------
+@mixin DesktopApplicationAnimation {
+  #Text1 {
+    animation: Text1 5s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Text1 {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 4;
+    }
+  }
+  #Text2 {
+    animation: Text2 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Text2 {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 4;
+    }
+  }
+  #Text3 {
+    animation: Text3 5s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 2s;
+    transform-box: fill-box;
+  }
+  @keyframes Text3 {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 4;
+    }
+  }
+  #Pen1 {
+    animation: Pen1 1.5s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Pen1 {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(-8%);
+    }
+  }
+  #Pen2 {
+    animation: Pen2 1.5s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 2s;
+    transform-box: fill-box;
+  }
+  @keyframes Pen2 {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(-8%);
+    }
+  }
+  #Pen3 {
+    animation: Pen3 1.5s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 1s;
+    transform-box: fill-box;
+  }
+  @keyframes Pen3 {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(-8%);
+    }
+  }
+}
+//-------------------------------------------------------------------------------------------------
+@mixin WebsiteAnimation {
+  #WebText1 {
+    animation: WebText1 8s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes WebText1 {
+    from {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  #WebText2 {
+    animation: WebText2 6s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 1s;
+    transform-box: fill-box;
+  }
+  @keyframes WebText2 {
+    from {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  #WebText3 {
+    animation: WebText3 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 2s;
+    transform-box: fill-box;
+  }
+  @keyframes WebText3 {
+    from {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  #Rectangle {
+    animation: Rectangle 6s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Rectangle {
+    from {
+      transform: translateX(-30%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  #Circle {
+    animation: Cercle 6s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Cercle {
+    from {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+
+//-------------------------------------------------------------------------------------------------
+@mixin MobileAnimation {
+  #Wave1 {
+    animation: Wave1 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Wave1 {
+    from {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  #Wave2 {
+    animation: Wave2 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Wave2 {
+    from {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  #Wave3 {
+    animation: Wave3 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Wave3 {
+    from {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  #Ball1 {
+    animation: Ball1 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Ball1 {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(150%);
+    }
+  }
+  #Ball2 {
+    animation: Ball2 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Ball2 {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(150%);
+    }
+  }
+  #Ball3 {
+    animation: Ball3 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Ball3 {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(150%);
+    }
+  }
+  #Ball4 {
+    animation: Ball4 4s ease-in-out alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes Ball4 {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(-150%);
+    }
+  }
+}
+
+//-------------------------------------------------------------------------------------------------
+@mixin HostingServerAnimation {
+  #Arrow {
+    animation: Arrow 15s linear;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+  }
+  @keyframes Arrow {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  #Led1 {
+    animation: Led1 3s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    transform-origin: center;
+  }
+  @keyframes Led1 {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  #Led2 {
+    animation: Led2 3s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    transform-origin: center;
+  }
+  @keyframes Led2 {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  #Led3 {
+    animation: Led3 3s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    transform-origin: center;
+  }
+  @keyframes Led3 {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+//-------------------------------------------------------------------------------------------------
+@mixin MaintenanceAnimation {
+  #Light1 {
+    animation: Light1 7s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+  }
+  @keyframes Light1 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #Light2 {
+    animation: Light2 7s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+  }
+  @keyframes Light2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #Light3 {
+    animation: Light3 7s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+  }
+  @keyframes Light3 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #Light4 {
+    animation: Light4 7s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+  }
+  @keyframes Light4 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #Light5 {
+    animation: Light5 7s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+  @keyframes Light5 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #Light6 {
+    animation: Light6 7s ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  @keyframes Light6 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #Light7 {
+    animation: Light7 7s ease-in-out ;
+    animation-iteration-count: infinite;
+  }
+  @keyframes Light7 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+//style--------------------------------------------------------------------------------------------
+@mixin Card {
+  .Card {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 700px;
+    background-color: $ServicesViewCardBGColor;
+    margin: 30px 20px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid $ServicesViewCardBorderColor;
+    transition: all ease-in-out 400ms;
+    @include Card-Title;
+    @include Card-Icon;
+    @include Card-Para;
+    @include Card-Button;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@mixin Card-Title {
+  .Card-Title {
+    color: $CardTitleColor;
+  }
+}
+
+@mixin Card-Button {
+  .Card-Button {
+    position: absolute;
+    bottom: 10%;
+    outline: none;
+    border: 2px solid $ServicesViewCardBtnBorderColor;
+    border-radius: 8px;
+    padding: 10px;
+    right: 35%;
+    color: $ServicesViewCardBtnColor;
+    background-color: $ServicesViewCardBtnBGColor;
+    font-weight: bold;
+    &:hover {
+      color: $ServicesViewCardBtnColorH;
+      background-color: $ServicesViewCardBtnBGColorH;
+      border-color: $ServicesViewCardBtnBorderColorH;
+    }
+  }
+}
+
+@mixin Card-Icon {
+  .Card-Icon svg {
+    width: 300px;
+    height: 250px;
+    margin-top: 45px;
+  }
+}
+@mixin Card-Para {
+  .Card-Para {
+    margin-top: 30px;
+    position: absolute;
+    text-align: left;
+    padding: 10px;
+  }
+}
